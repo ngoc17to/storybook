@@ -1,10 +1,10 @@
 import type {Meta, StoryObj} from '@storybook/react';
 
 import ModalComponent from './ModalComponent';
+import AlertComponent from './AlertComponent';
 
 import './Modal.css';
 import '../../App.css';
-import AlertComponent from './AlertComponent';
 
 const meta: Meta<typeof ModalComponent> = {
     component: ModalComponent,
@@ -13,7 +13,7 @@ const meta: Meta<typeof ModalComponent> = {
 }
 export default meta;
 
-type Story = StoryObj<React.FC>;
+type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {

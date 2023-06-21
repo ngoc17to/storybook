@@ -53,7 +53,7 @@ const Modal: React.FC<ModalProps> = (props) =>
                                         className="button-default cancel-button"
                                         onClick={hide}
                                     >
-                                        <p>Hủy</p>
+                                        <p>Cancel</p>
                                     </button>
 
                                 }
@@ -61,7 +61,7 @@ const Modal: React.FC<ModalProps> = (props) =>
                                     className="button-default submit-button"
                                     onClick={hide}
                                 >
-                                    <p>Xác nhận</p>
+                                    <p>Confirm</p>
                                 </button>
                             </div>
                         </div>

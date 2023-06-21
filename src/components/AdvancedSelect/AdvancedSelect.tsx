@@ -4,20 +4,20 @@ import { BsCaretDown, BsCaretUp, BsCheck } from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import { useTheme } from '../../contexts/ThemeContext';
-import { AdvanceSelectOption } from './type';
+import { AdvancedSelectOption } from './type';
 
 import '../../App.css';
 import './AdvancedSelect.css';
 
-type AdvanceSelectProps = {
-    options: AdvanceSelectOption[]
+type AdvancedSelectProps = {
+    options: AdvancedSelectOption[]
     placeholder?: string
     defaultValue?: string[]
     isMultiple?: boolean
     disable?: boolean
 }
 
-const AdvanceSelect: React.FC<AdvanceSelectProps> = (props) =>
+const AdvanceSelect: React.FC<AdvancedSelectProps> = (props) =>
 {
     const { options, defaultValue = [], isMultiple = false, placeholder = 'Select an option...', disable = false } = props;
 
@@ -26,7 +26,7 @@ const AdvanceSelect: React.FC<AdvanceSelectProps> = (props) =>
     const [valueList, setValueList] = useState<string[]>(defaultValue);
     const [dropdownMenuVisible, setDropdownMenuVisible] = useState<boolean>(false);
     const [focusedIndex, setFocusIndex] = useState(0);
-    const [showOptions, setShowOptions] = useState<AdvanceSelectOption[]>(options);
+    const [showOptions, setShowOptions] = useState<AdvancedSelectOption[]>(options);
     const [message, setMessage] = useState<string>('');
 
     const selectRef = useRef<any>();

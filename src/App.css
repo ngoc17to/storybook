@@ -1,0 +1,188 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf) format('truetype');
+}
+.light-mode, body {
+  --text-color: #000;
+  --background-color: rgb(255, 255, 255);
+  --modal-color: rgb(226, 232, 240);
+  --modal-message-color:rgb(248, 250, 252);
+  --submit-btn-color: rgb(100, 116, 139);
+  --submit-hover-color: rgba(100, 116, 139, 0.95);
+  --submit-text-color: rgb(241, 245, 249);
+  --btn-color: rgb(241, 245, 249);
+  --btn-border-color: rgb(100, 116, 139);
+  --btn-hover-color: rgba(100, 116, 139, 0.3);
+  --success-btn-color: rgb(255, 255, 255);
+  --success-btn-hover-color: rgba(20, 180, 68, 0.95);
+  --success-color: rgb(20, 180, 68);
+  --warning-btn-color: rgb(255, 255, 255);
+  --warning-btn-hover-color: rgba(255, 163, 26, 0.95);
+  --warning-color: rgb(255, 163, 26);
+  --error-btn-color: rgb(255, 255, 255);
+  --error-btn-hover-color: rgba(255, 99, 26, 0.95);
+  --error-color: rgb(255, 98, 26);
+  --component-menu-hover: rgba(114, 141, 155, 0.15);
+  --border-line-color: rgba(0, 0, 0, 0.2);
+  --setting-menu-color: rgb(255, 255, 255);
+  --icon-color: #000;
+}
+.dark-mode {
+  --text-color: rgb(241, 245, 249);
+  --background-color: rgb(10,25,41);
+  --modal-color: rgb(30, 41, 59);
+  --modal-message-color:rgb(51, 65, 85);
+  --submit-btn-color: rgb(100, 116, 139);
+  --submit-hover-color: rgba(100, 116, 139, 0.9);
+  --submit-text-color: rgb(241, 245, 249);
+  --btn-color: rgb(100, 116, 139);
+  --btn-border-color: rgb(100, 116, 139);
+  --btn-hover-color: rgba(100, 116, 139, 0.9);
+  --success-btn-color: rgb(20, 180, 68);
+  --success-btn-hover-color: rgba(20, 180, 68, 0.9);
+  --success-color: rgb(20, 180, 68);
+  --warning-btn-color: rgb(255, 163, 26);
+  --warning-btn-hover-color: rgba(255, 163, 26, 0.9);
+  --warning-color: rgb(255, 163, 26);
+  --error-btn-color: rgb(255, 99, 26);
+  --error-btn-hover-color: rgba(255, 99, 26, 0.9);
+  --error-color: rgb(255, 98, 26);
+  --component-menu-hover: rgba(64, 196, 255, 0.2);
+  --border-line-color: rgb(100, 116, 139);
+  --setting-menu-color: rgb(10,20,41);
+  --icon-color: #fff;
+}
+body{
+  background-color: var(--background-color);
+  top: 0;
+  left: 0;
+}
+
+.App {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.app-right{
+  width: 100%;
+  display: flex;
+  flex-direction: column;    
+  padding-left: 350px;
+  padding-top: 60px;
+  background-color: var(--background-color);
+}
+.app-left{
+  width: fit-content;
+}
+.app-title{
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.app-title img{
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.app-content{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+button{
+  cursor: pointer;
+}
+  
+
+.button-default{
+  background-color: var(--btn-color);
+  border: 2px solid var(--btn-border-color);
+  border-radius: 4px;
+  margin: 5px;
+  height: 35px;
+}
+
+.button-default:hover{
+  background-color: var(--btn-hover-color);
+}
+
+button p{
+  padding: 7px;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.mode_btn{
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.component-container{
+  width: 100%;
+  height: 100%;
+  overflow:auto;
+}
+.component-container p, h1, h3{
+  color: var(--text-color);
+}
+.menu-responsive{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.app-icon {
+  color: var(--icon-color)
+}

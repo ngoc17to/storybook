@@ -1,0 +1,120 @@
+.select-container{
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+  }
+  .select-wrapper {
+    width: 100%;
+    z-index: 0;
+  }
+  .disable-select{
+    pointer-events:none;
+  }
+  .select-showValue {
+    border: 1px solid var(--btn-border-color);
+    background-color: var(--modal-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+    height: max-content;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .select-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1;
+  }
+  .select-items {
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-top: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid var(--btn-border-color);
+    background-color: var(--modal-color);
+    color: var(--text-color);
+    width: 100%;
+    max-width: 700px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 30px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+  }
+  .select-icon{
+    display: flex;
+    align-items: center;
+  }
+  .item {
+    width: calc(100% - 2px);
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+  .item-tick {
+    width: 25px;
+    height: 25px;
+  }
+  .item-tick:hover {
+    background-color: transparent;
+  }
+  .select-items div:hover {
+    box-sizing: border-box;
+  }
+  .clear-btn {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+  .clear-btn:hover {
+    background-color: rgba(100, 116, 139, 0.6);
+  }
+  .value-list {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: rgb(0, 176, 255);
+    padding-left: 5px;
+    color: #fff;
+    margin: 5px 0px 5px 5px;
+    border-radius: 2px;
+  }
+  .deselect-btn {
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+  }
+  .input-select{
+    border: 0;
+    flex: 1;
+    height: 100%;
+    min-height: 40px;
+    width: fit-content;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+  }
+  .item:hover{
+    background-color: rgba(64, 196, 255,0.15);
+  }
+  
